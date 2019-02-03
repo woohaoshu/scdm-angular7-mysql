@@ -1,0 +1,52 @@
+<div id="scdm-logo" class="pull-left">
+    <a href=""><img src="./assets/images/scdm-logo-colorful-72ppi.png"></a>
+</div>
+<div id="school-logo" class="visible-md-inline visible-lg-inline">
+    <img src="./assets/images/shu.svg">
+</div>
+<!-- cover渐变效果，凸显顶部logo -->
+<div class="cover"></div>
+
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active" alt="First slide" style="background: url(./assets/images/1920x1080/01.jpg) no-repeat center center;"></div>
+        <div class="item" alt="Second slide" style="background: url(./assets/images/1920x1080/02.jpg) no-repeat center center;"></div>
+        <div class="item" alt="Third slide" style="background: url(./assets/images/1920x1080/03.jpg) no-repeat center center;"></div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+    </a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+    </a>
+</div>
+
+<!-- 用于定位，方便将navbar滚动到顶部 -->
+<div id="navScrollTop" class="clearfix"></div>
+
+<nav class="navbar my-navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+              <span class="sr-only">切换导航</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" routerLink="/home" routerLinkActive="active">首页</a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a routerLink="/news" routerLinkActive="active">最新动态</a></li>
+                <li><a routerLink="/members" routerLinkActive="active">成员</a></li>
+                <li><a routerLink="/meetings" routerLinkActive="active">小组会议</a></li>
+                <li><a routerLink="/papers" routerLinkActive="active">论著</a></li>
+                <li><a routerLink="/projects" routerLinkActive="active">项目</a></li>
+                <li><a routerLink="/photos" routerLinkActive="active">相册</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="placeholder"></div>

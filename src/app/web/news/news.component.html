@@ -1,0 +1,39 @@
+<div id="news-page" class="content container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>SCDM 动态</h2>
+            <div class="divider margin-b-60"></div>
+            <!-- Swiper Testimonials -->
+            <div class="swiper-slider swiper-testimonials">
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper sibling-fade">
+                    <div class="swiper-slide margin-b-20" *ngFor="let new of news">
+                        <div class="row">
+
+                            <div class="col-sm-7">
+                                <h3>{{new.title}}</h3>
+                                <blockquote class="blockquote">
+                                    <div class="margin-b-20">
+                                        {{new.content}}
+                                    </div>
+                                </blockquote>
+                                <p><span class="fweight-700 color-link">{{new.date}}</span></p>
+                            </div>
+
+                            <div class="col-sm-5">
+                                <img class="img-responsive pull-right" [src]="new.photoUrl" style="max-height:160px;">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End Swiper Wrapper -->
+
+                <!-- Pagination -->
+                <div class="swiper-testimonials-pagination"></div>
+            </div>
+            <!-- End Swiper Testimonials -->
+        </div>
+    </div>
+    <!--// end row -->
+</div>

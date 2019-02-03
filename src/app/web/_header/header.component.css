@@ -1,0 +1,148 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* logo位置 */
+
+#scdm-logo,
+#school-logo {
+    display: block;
+    position: absolute;
+    z-index: 2;
+}
+
+#school-logo {
+    right: 0;
+}
+
+#scdm-logo>a>img {
+    max-height: 70px;
+    padding-top: 10px;
+    padding-left: 50px;
+    width: 350px;
+}
+
+#school-logo>img {
+    height: 70px;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+
+/* cover渐变效果，凸显顶部logo */
+
+.cover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+
+/* 不带carousel效果的header，弃用 */
+
+
+/* .bg {
+    display: block;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    background: url(../assets/images/cover-img.jpg) no-repeat bottom center;
+    background-color: #000;
+    background-size: cover;
+    background-position: 50% 45%;
+    z-index: 0;
+} */
+
+.carousel-inner {
+    display: block;
+    z-index: 0;
+}
+
+.carousel-inner>.item {
+    height: 100%;
+    background-size: cover;
+}
+
+
+/*小屏幕的下拉按钮*/
+
+button.navbar-toggle {
+    background-color: #555;
+}
+
+
+/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/
+
+button.navbar-toggle>span.icon-bar {
+    background-color: #ccc
+}
+
+.navbar-nav {
+    margin: 0px;
+}
+
+.my-navbar {
+    /*padding: 20px 0;
+    margin: -90px 0 0 0;*/
+    margin: -50px 0 0 0;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    background: rgba(142, 143, 145, 0.50);
+    border: 0;
+    z-index: 1;
+}
+
+.my-navbar a {
+    background: transparent;
+    color: #fff;
+    transition: color 0.5s ease-in-out;
+}
+
+.my-navbar a:hover,
+.my-navbar .active,
+.my-navbar .active>a {
+    color: #0363AF;
+    background: rgba(255, 255, 255, 0.50);
+    outline: 0;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+
+/*navbar固定在顶部时的样式*/
+
+.top-nav {
+    padding: 0;
+    background: #1B325F;
+    margin: 0;
+    z-index: 999;
+}
+
+.navbar-fixed-top a {
+    background: transparent;
+    color: #fff;
+}
+
+.navbar-fixed-top a:hover,
+.navbar-fixed-top .active,
+.navbar-fixed-top .active>a {
+    color: #9CC4E4;
+    background: transparent;
+    outline: 0;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+
+/* .nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: transparent;
+} */
+
+#placeholder {
+    height: 50px;
+}

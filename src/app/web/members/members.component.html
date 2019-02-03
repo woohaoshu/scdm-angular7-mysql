@@ -1,0 +1,188 @@
+<div id="members-page" class="content container">
+    <div class="row">
+        <div class="col-xs-10" role="main">
+
+            <h2>SCDM 成员</h2>
+
+            <div class="main">
+
+                <!-- 负责人 -->
+                <div class="divider"></div>
+                <sn-scroll-spy-section id="section1" for="foo">
+                    <div #sect1>
+                        <h2 id="manager" class="anchor">负责人</h2>
+                        <div class="row">
+                            <div *ngFor="let member of members">
+                                <div *ngIf="member.degree == 0">
+                                    <div class="col-sm-7 sm-margin-b-50">
+                                        <h4>{{member.name}} <small> {{member.note}}</small></h4>
+                                        <p>中国计算机学会（CCF）会员、ACM会员、CCF服务计算专委会委员、CCF
+                                            YOCSEF上海委员、上海计算机学会会员、上海计算机学会人工智能专委会学术秘书。</p>
+                                        <p>2012年毕业于同济大学，获计算机应用技术专业博士学位。2009年10月-2011年10月，曾作为国家公派留学人员，
+                                            在美国华盛顿大学（Washington University in St.
+                                            Louis）计算机科学与工程系，从事两年科研学习工作。2012年8月起，进入上海大学计算机工程与科学学院从事科研与教学工作，组建了服务计算与数据挖掘实验室。</p>
+                                        <a class="link" href="http://my.shu.edu.cn/Index.aspx?TID=4197" target="_blank">Read
+                                            More</a>
+                                    </div>
+                                    <div class="col-sm-4 col-sm-offset-1">
+                                        <img class="img-responsive" [src]="member.photoUrl" style="max-height:250px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sn-scroll-spy-section>
+                <!--// end row -->
+
+                <!-- 博士 -->
+                <div class="divider"></div>
+                <sn-scroll-spy-section id="section2" for="foo">
+                    <div #sect2>
+                        <h2 id="phd" class="anchor">博士生</h2>
+                        <p>（按年级、拼音排序）</p>
+                        <div class="row">
+                            <div *ngFor="let member of members">
+                                <div *ngIf="member.degree == 1">
+                                    <div class="col-sm-4 sm-margin-b-50 memberBox">
+                                        <div class="bg-color-white margin-b-20">
+                                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                                <img class="img-responsive" [src]="member.photoUrl" alt="Team Image">
+                                            </div>
+                                        </div>
+                                        <h4>{{member.name}} <span class="text-uppercase margin-l-20">{{member.grade}}</span></h4>
+                                        <p class="memberIntro">{{member.intro}}</p>
+                                        <a class="link" href="javascript:;">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sn-scroll-spy-section>
+                <!--// End 博士 -->
+
+                <!-- 硕士 -->
+                <div class="divider"></div>
+                <sn-scroll-spy-section id="section3" for="foo">
+                    <div #sect3>
+                        <h2 id="master" class="anchor">硕士生</h2>
+                        <p>（按年级、拼音排序）</p>
+                        <div class="row">
+                            <div *ngFor="let member of members">
+                                <div *ngIf="member.degree == 2">
+                                    <div class="col-sm-4 sm-margin-b-50 memberBox">
+                                        <div class="bg-color-white margin-b-20">
+                                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                                <img class="img-responsive" [src]="member.photoUrl" alt="Team Image">
+                                            </div>
+                                        </div>
+                                        <h4>{{member.name}} <span class="text-uppercase margin-l-20">{{member.grade}}</span></h4>
+                                        <p class="memberIntro">{{member.intro}}</p>
+                                        <a class="link" href="javascript:;">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sn-scroll-spy-section>
+                <!--// End 硕士 -->
+
+                <!-- 本科生 -->
+                <div class="divider"></div>
+                <sn-scroll-spy-section id="section4" for="foo">
+                    <div #sect4>
+                        <h2 id="undergraduate" class="anchor">本科生</h2>
+                        <p>（按年级、拼音排序）</p>
+                        <div class="row">
+                            <div class="col-sm-12 sm-margin-b-50" *ngFor="let member of members">
+                                <div *ngIf="member.degree == 3">
+                                    <h4>
+                                        <div class="inlineName">{{member.name}}</div>
+                                        <span class="text-uppercase margin-l-20">{{member.grade}}</span>
+                                    </h4>
+                                    <p class="inlineIntro">{{member.intro}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sn-scroll-spy-section>
+                <!--// end 本科生 -->
+
+                <!-- 合作者 -->
+                <div class="divider"></div>
+                <sn-scroll-spy-section id="section5" for="foo">
+                    <div #sect5>
+                        <h2 id="cooperator" class="anchor">合作者</h2>
+                        <p>（按拼音排序）</p>
+                        <div class="row">
+                            <div *ngFor="let member of members">
+                                <div *ngIf="member.degree == 4">
+                                    <div class="col-sm-4 sm-margin-b-50 memberBox">
+                                        <div class="bg-color-white margin-b-20">
+                                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                                <img class="img-responsive" [src]="member.photoUrl" alt="Team Image">
+                                            </div>
+                                        </div>
+                                        <h4>{{member.name}} <span class="text-uppercase margin-l-20">{{member.note}}</span></h4>
+                                        <p class="memberIntro">{{member.intro}}</p>
+                                        <a class="link" [href]="member.introUrl" target="_blank">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sn-scroll-spy-section>
+                <!--// end 合作者 -->
+
+                <!-- 毕业生 -->
+                <div class="divider"></div>
+                <sn-scroll-spy-section id="section6" for="foo">
+                    <div #sect6>
+                        <h2 id="graduate" class="anchor">毕业生</h2>
+                        <p>（按毕业时间排序）</p>
+                        <div class="row">
+                            <div *ngFor="let member of members">
+                                <div *ngIf="member.degree == 5">
+                                    <div class="col-sm-4 sm-margin-b-50 memberBox">
+                                        <div class="bg-color-white margin-b-20">
+                                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                                <img class="img-responsive" [src]="member.photoUrl" alt="Team Image">
+                                            </div>
+                                        </div>
+                                        <h4>{{member.name}} <span class="text-uppercase margin-l-20">{{member.note}}</span></h4>
+                                        <p class="memberIntro">{{member.intro}}</p>
+                                        <a class="link" href="javascript:;">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 sm-margin-b-50" *ngFor="let member of members">
+                                <div *ngIf="member.degree == 6">
+                                    <h4>
+                                        <div class="inlineName">{{member.name}}</div>
+                                        <span class="text-uppercase margin-l-20">{{member.grade}}</span>
+                                    </h4>
+                                    <p class="inlineIntro">{{member.intro}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sn-scroll-spy-section>
+                <!--// end 毕业生 -->
+            </div>
+
+        </div>
+
+        <div class="col-xs-2" role="complementary">
+            <ul class="nav menu hidden-print hidden-xs hidden-sm" snScrollSpy id="foo" data-spy="affix" data-offset-top="948">
+                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section1" (click)="smoothScroll('section1'); $event.preventDefault();">负责人</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section2" (click)="smoothScroll('section2'); $event.preventDefault();">博士生</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section3" (click)="smoothScroll('section3'); $event.preventDefault();">硕士生</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section4" (click)="smoothScroll('section4'); $event.preventDefault();">本科生</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section5" (click)="smoothScroll('section5'); $event.preventDefault();">合作者</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section6" (click)="smoothScroll('section6'); $event.preventDefault();">毕业生</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
