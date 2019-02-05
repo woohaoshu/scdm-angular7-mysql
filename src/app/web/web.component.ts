@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 declare var $: any; //使用jQuery
 
 @Component({
+    selector: 'web-page',
     templateUrl: './web.component.html'
 })
 export class WebComponent implements OnInit {
