@@ -1,24 +1,15 @@
-﻿import { Component } from '@angular/core';
-import { first } from 'rxjs/operators';
+import { Component, OnInit } from '@angular/core';
 
-import { User } from '../_models';
-import { UserService, AuthenticationService } from '../_services';
+@Component({
+  selector: 'scdm-admin-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+export class HomeComponent implements OnInit {
 
-@Component({ templateUrl: 'home.component.html' })
-export class HomeComponent {
-    currentUser: User;
-    userFromApi: User;
+  constructor() { }
 
-    constructor(
-        private userService: UserService,
-        private authenticationService: AuthenticationService
-    ) {
-        this.currentUser = this.authenticationService.currentUserValue;
-    }
+  ngOnInit() {
+  }
 
-    ngOnInit() {
-        this.userService.getById(this.currentUser.id).pipe(first()).subscribe(user => {
-            this.userFromApi = user;
-        });
-    }
 }

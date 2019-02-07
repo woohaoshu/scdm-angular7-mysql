@@ -2,11 +2,7 @@
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminComponent } from './admin.component';
-import { HomeComponent } from './home';
-import { ManagerComponent } from './manager';
-import { LoginComponent } from './login';
-import { AuthGuard } from './_guards';
-import { Role } from './_models';
+import { HomeComponent } from './home/home.component';
 
 const adminRoutes: Routes = [
     {
@@ -16,17 +12,6 @@ const adminRoutes: Routes = [
             {
                 path: '',
                 component: HomeComponent,
-                canActivate: [AuthGuard]
-            },
-            {
-                path: 'manager',
-                component: ManagerComponent,
-                canActivate: [AuthGuard],
-                data: { roles: [Role.Admin] }
-            },
-            {
-                path: 'login',
-                component: LoginComponent
             },
             // otherwise redirect to home
             // { path: '**', redirectTo: '' }
