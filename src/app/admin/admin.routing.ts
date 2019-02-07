@@ -2,7 +2,8 @@
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminComponent } from './admin.component';
-import { HomeComponent } from './home/home.component';
+import { FrameComponent } from './frame/frame.component';
+import { LoginComponent } from './login/login.component';
 
 const adminRoutes: Routes = [
     {
@@ -11,8 +12,12 @@ const adminRoutes: Routes = [
         children: [
             {
                 path: '',
-                component: HomeComponent,
+                component: FrameComponent,
             },
+            {
+                path: 'login',
+                component: LoginComponent
+            }
             // otherwise redirect to home
             // { path: '**', redirectTo: '' }
         ]
