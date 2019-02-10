@@ -137,12 +137,16 @@ button.navbar-toggle>span.icon-bar {
     transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 
-
-/* .nav>li>a:focus,
-.nav>li>a:hover {
-    background-color: transparent;
-} */
+/* 覆盖bootstrap3样式 */
+.navbar-collapse {
+    padding: 0;
+}
 
 #placeholder {
     height: 50px;
+}
+
+/* 减淡右侧按钮颜色 */
+ul.pull-right li a {
+    color: #C0C0C0;
 }

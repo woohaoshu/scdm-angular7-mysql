@@ -4,8 +4,8 @@ import { Component, OnInit } from '@angular/core';
     selector: 'scdm-admin-login',
     templateUrl: './login.component.html',
     styleUrls: [
-        './login.component.css',
-        '../../../assets/css/bootstrap4.min.css'
+        '../../../assets/css/bootstrap4.min.css',
+        './login.component.css'
     ]
 })
 export class LoginComponent implements OnInit {
