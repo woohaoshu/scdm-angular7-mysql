@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { AdminRoutingModule } from './admin.routing';
 
 import { AdminComponent } from './admin.component';
-import { FrameComponent } from './frame/frame.component';
+import { FrameComponent } from './_frame/frame.component';
 import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
     imports: [
@@ -15,7 +16,8 @@ import { LoginComponent } from './login/login.component';
     declarations: [
         AdminComponent,
         FrameComponent,
-        LoginComponent
+        LoginComponent,
+        ProfileComponent
     ],
     providers: []
 })
