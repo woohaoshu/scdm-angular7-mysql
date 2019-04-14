@@ -11,7 +11,7 @@ import {MeetingService} from './meetings.service';
 })
 export class MeetingsComponent implements OnInit {
   meetings:Meeting[];
-  constructor(private meetingService: MeetingService) { }
+  constructor(public meetingService: MeetingService) { }
 
   getMeetings():void{
     this.meetingService.getMeetings().then(meetings =>this.meetings=meetings);

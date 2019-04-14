@@ -5,8 +5,8 @@ import { AdminModule } from './admin/admin.module';
 
 
 const routes: Routes = [
-  { path: '', loadChildren: () => WebModule },
-  { path: 'admin', loadChildren: () => AdminModule }
+  { path: '', loadChildren: './web/web.module#WebModule' },
+  { path: 'admin', loadChildren: './admin/admin.module#AdminModule' }
 ];
 
 @NgModule({

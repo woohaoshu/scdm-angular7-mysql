@@ -14,12 +14,11 @@ declare var $: any; //使用jQuery
 export class MembersComponent implements OnInit {
   members: Member[];
   
-  constructor(private memberService: MemberService) { }
+  constructor(public memberService: MemberService) { }
 
   //通过service获得members
   getMembers(): void {
     this.memberService.getMembers().then(members => this.members = members);
-    console.log(this.members);
   }
 
   ngOnInit() {

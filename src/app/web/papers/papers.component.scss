@@ -1,12 +1,11 @@
 :host /deep/ {
     .container {
         .affix-top {
-            position: fixed;
-            top: 0;
+            top: 948px;
         }
-        .affix-bottom {
+        .affix {
             position: fixed;
-            top: 90px; //修改固定后的位置
+            top: 90px;
         }
         ul.menu {
             font-size: 14px;

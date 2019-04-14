@@ -11,7 +11,7 @@ import {NewService} from './news.service';
 })
 export class NewsComponent implements OnInit {
   news: New[];
-  constructor(private newService: NewService) { }
+  constructor(public newService: NewService) { }
 
   getNews(): void{
     this.newService.getNews().then(news => this.news = news);

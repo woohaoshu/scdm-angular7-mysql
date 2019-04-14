@@ -8,7 +8,7 @@
 
                 <!-- 负责人 -->
                 <div class="divider"></div>
-                <sn-scroll-spy-section id="section1" for="foo">
+                <sn-scroll-spy-section id="section1" for="member-scroll">
                     <div #sect1>
                         <h2 id="manager" class="anchor">负责人</h2>
                         <div class="row">
@@ -36,7 +36,7 @@
 
                 <!-- 博士 -->
                 <div class="divider"></div>
-                <sn-scroll-spy-section id="section2" for="foo">
+                <sn-scroll-spy-section id="section2" for="member-scroll">
                     <div #sect2>
                         <h2 id="phd" class="anchor">博士生</h2>
                         <p>（按年级、拼音排序）</p>
@@ -62,7 +62,7 @@
 
                 <!-- 硕士 -->
                 <div class="divider"></div>
-                <sn-scroll-spy-section id="section3" for="foo">
+                <sn-scroll-spy-section id="section3" for="member-scroll">
                     <div #sect3>
                         <h2 id="master" class="anchor">硕士生</h2>
                         <p>（按年级、拼音排序）</p>
@@ -88,7 +88,7 @@
 
                 <!-- 本科生 -->
                 <div class="divider"></div>
-                <sn-scroll-spy-section id="section4" for="foo">
+                <sn-scroll-spy-section id="section4" for="member-scroll">
                     <div #sect4>
                         <h2 id="undergraduate" class="anchor">本科生</h2>
                         <p>（按年级、拼音排序）</p>
@@ -109,7 +109,7 @@
 
                 <!-- 合作者 -->
                 <div class="divider"></div>
-                <sn-scroll-spy-section id="section5" for="foo">
+                <sn-scroll-spy-section id="section5" for="member-scroll">
                     <div #sect5>
                         <h2 id="cooperator" class="anchor">合作者</h2>
                         <p>（按拼音排序）</p>
@@ -135,7 +135,7 @@
 
                 <!-- 毕业生 -->
                 <div class="divider"></div>
-                <sn-scroll-spy-section id="section6" for="foo">
+                <sn-scroll-spy-section id="section6" for="member-scroll">
                     <div #sect6>
                         <h2 id="graduate" class="anchor">毕业生</h2>
                         <p>（按毕业时间排序）</p>
@@ -174,13 +174,13 @@
         </div>
 
         <div class="col-xs-2" role="complementary">
-            <ul class="nav menu hidden-print hidden-xs hidden-sm affix affix-bottom" snScrollSpy id="foo" data-spy="affix" data-offset-top="948">
-                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section1" (click)="smoothScroll('section1'); $event.preventDefault();">负责人</a></li>
-                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section2" (click)="smoothScroll('section2'); $event.preventDefault();">博士生</a></li>
-                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section3" (click)="smoothScroll('section3'); $event.preventDefault();">硕士生</a></li>
-                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section4" (click)="smoothScroll('section4'); $event.preventDefault();">本科生</a></li>
-                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section5" (click)="smoothScroll('section5'); $event.preventDefault();">合作者</a></li>
-                <li class="nav-item"><a snScrollSpyItem for="foo" class="nav-link" href="#section6" (click)="smoothScroll('section6'); $event.preventDefault();">毕业生</a></li>
+            <ul class="nav menu hidden-print hidden-xs hidden-sm affix" snScrollSpy id="member-scroll" data-spy="affix" data-offset-top="948">
+                <li class="nav-item"><a snScrollSpyItem for="member-scroll" class="nav-link" href="#section1" (click)="smoothScroll('section1'); $event.preventDefault();">负责人</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="member-scroll" class="nav-link" href="#section2" (click)="smoothScroll('section2'); $event.preventDefault();">博士生</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="member-scroll" class="nav-link" href="#section3" (click)="smoothScroll('section3'); $event.preventDefault();">硕士生</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="member-scroll" class="nav-link" href="#section4" (click)="smoothScroll('section4'); $event.preventDefault();">本科生</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="member-scroll" class="nav-link" href="#section5" (click)="smoothScroll('section5'); $event.preventDefault();">合作者</a></li>
+                <li class="nav-item"><a snScrollSpyItem for="member-scroll" class="nav-link" href="#section6" (click)="smoothScroll('section6'); $event.preventDefault();">毕业生</a></li>
             </ul>
         </div>
         
