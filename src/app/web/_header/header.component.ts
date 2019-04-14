@@ -29,9 +29,10 @@ export class HeaderComponent implements OnInit {
         var s = document.body.scrollTop || document.documentElement.scrollTop;
         if (s > nh) {
             $(".my-navbar").addClass("top-nav navbar-fixed-top");
+            $(".nav.menu").addClass("affix"); // scrollspy滚动时固定在右侧
         } else {
             $(".my-navbar").removeClass("top-nav navbar-fixed-top");
-            //navbar.className = "navbar navbar-static-top";
+            $(".nav.menu").removeClass("affix"); // scrollspy滚动时固定在右侧
         };
     };
 
