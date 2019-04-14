@@ -18,7 +18,7 @@ export const MEETINGS: Meeting[] = [
         title:'向阳分享',
         date:'2018-01-15',
         content:'介绍了目前一些基于深度学习的文本特征提取方法。',
-        photoUrl:'assets/images/meetings-pic/深度学习文本模型.png',
+        photoUrl:'assets/images/meetings-pic/deep-text.png',
         doc:'深度学习文本模型.pptx'
     },
 ];

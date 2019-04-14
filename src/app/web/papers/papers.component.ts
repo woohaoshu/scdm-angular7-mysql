@@ -13,6 +13,7 @@ export class PapersComponent implements OnInit {
     
   }
 
+  @ViewChild('sect0') year0: ElementRef;
   @ViewChild('sect1') year1: ElementRef;
   @ViewChild('sect2') year2: ElementRef;
   @ViewChild('sect3') year3: ElementRef;
